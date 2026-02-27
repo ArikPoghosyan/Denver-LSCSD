@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 import { createClient } from '@supabase/supabase-js'
-
+console.log('Supabase URL:', import.meta.env.VITE_SUPABASE_URL)
+console.log('Supabase Key exists:', !!import.meta.env.VITE_SUPABASE_ANON_KEY)
 // Берем переменные из import.meta.env (Vite)
 // Vercel добавил их с разными префиксами
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 
